@@ -25,6 +25,10 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -32,7 +36,53 @@ h1 {
     margin-bottom: 1rem;
 }
 
+#app > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
 p {
     font-size: 1.2rem;
     opacity: 0.9;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.home-btn, .guest-btn {
+    font-family: 'CursedTimer';
+    background-color: transparent;
+    border: 2px solid #9AABD8;
+    color: #9AABD8;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    min-width: 45px;
+}
+
+.home-btn:hover, .guest-btn:hover {
+    background-color: rgba(154, 171, 216, 0.1);
+}
+
+.label-score{
+    font-family: 'CursedTimer';
+    background-color: black;
+    color: #F94F6D;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 5px;
+    min-width: 120px;
+    margin-bottom: 1rem;
 }

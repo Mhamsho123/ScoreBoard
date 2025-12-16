@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <div id="app">
-      <h1>Welcome to Scoreboard</h1>
-      <p>Your JavaScript project is running!</p>
+    <div id="app" class="home-guest">
+      <div>
+        <h1 class="label">Home</h1>
+        <div id="home-score" class="label-score">0</div>
+        <div class="button-container">
+          <button class="home-btn" onclick="home1()">+1</button>
+          <button class="home-btn" onclick="home2()">+2</button>
+          <button class="home-btn" onclick="home3()">+3</button>
+        </div>
+      </div>
+      <div>
+        <h1 class="label">Guest</h1>
+        <div id="guest-score" class="label-score">0</div>
+        <div class="button-container">
+          <button class="guest-btn" onclick="guest1()">+1</button>
+          <button class="guest-btn" onclick="guest2()">+2</button>
+          <button class="guest-btn" onclick="guest3()">+3</button>
+        </div>
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
