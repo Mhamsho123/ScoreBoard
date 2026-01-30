@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Cursed Timer ULiL";
+    src: url("./fonts/Cursed.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-family: "Cursed Timer ULiL", sans-serif;
+    font-size: large;
+}
+
+.full-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.scoreboard-title {
+    font-family: sans-serif;
+    font-size: 3rem;
+    margin: 20px 0 0;
+}
+
+.total-points {
+    display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    color: #fc4f4c;
+    font-size: 5rem;
+    padding: 30px 80px;
+    margin: 20px 0px 40px;
+    /* now this affects width in a visible way */
+}
+
+
+
+.points {
+    display: flex;
+    justify-content: center;
+}
+
+
+.plus {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 15px;
+    margin: 0px 5px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 15px;
+    font-family: "Cursed Timer ULiL";
+}
+
+.plus:hover {
+    background-color: #fc4f4c;
+}
+
+.reset-btn {
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: #fc4f4c;
+    color: white;
+    margin: 50px 0;
+    font-size: 25px;
+    font-family: Cursed Timer UliL;
+    padding: 10PX;
+}
+
+.reset-btn:hover {
+    background-color: midnightblue;
+}
